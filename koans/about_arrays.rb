@@ -18,7 +18,7 @@ class AboutArrays < EdgeCase::Koan
     assert_equal [1, 2], array
 
     array << 333
-    assert_equal [1,2,333], array
+    assert_equal [1, 2, 333], array
   end
 
   def test_accessing_array_elements
@@ -46,9 +46,9 @@ class AboutArrays < EdgeCase::Koan
 
   def test_arrays_and_ranges
     assert_equal Range, (1..5).class
-    assert_not_equal [1,2,3,4,5,6], (1..5)
-    assert_equal [1,2,3,4,5], (1..5).to_a
-    assert_equal [1,2,3,4], (1...5).to_a
+    assert_not_equal [1, 2, 3, 4, 5, 6], (1..5)
+    assert_equal [1, 2, 3, 4, 5], (1..5).to_a
+    assert_equal [1, 2, 3, 4], (1...5).to_a
   end
 
   def test_slicing_with_ranges
@@ -67,7 +67,7 @@ class AboutArrays < EdgeCase::Koan
 
     popped_value = array.pop
     assert_equal :last, popped_value
-    assert_equal [1,2] , array
+    assert_equal [1, 2] , array
   end
 
   def test_shifting_arrays
@@ -78,7 +78,7 @@ class AboutArrays < EdgeCase::Koan
 
     shifted_value = array.shift
     assert_equal :first, shifted_value
-    assert_equal [1,2] , array
+    assert_equal [1, 2] , array
   end
 
 end
