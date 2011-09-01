@@ -14,6 +14,13 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+
+ if a<=0 || b<=0 || c<=0
+    raise TriangleError, "None of the sides can have a negative value or equal to 0"
+ elsif (a + b <= c) || (a + c <= b) || (b + c <= a) 
+    raise TriangleError, "Sides have to meet the triangle rule"  
+ end
+
   if a == b
     if b == c
       :equilateral
@@ -29,6 +36,8 @@ def triangle(a, b, c)
       :scalene
     end
  end
+
+
 end
 
 # Error class used in part 2.  No need to change this code.
