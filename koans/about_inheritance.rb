@@ -43,7 +43,7 @@ class AboutInheritance < EdgeCase::Koan
     assert_raise(NoMethodError)
       fido = Dog.new("Fido")
       fido.wag
-    end
+    
   end
 
   def test_subclasses_can_modify_existing_behavior
