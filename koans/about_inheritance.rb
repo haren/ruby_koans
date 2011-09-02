@@ -40,10 +40,10 @@ class AboutInheritance < EdgeCase::Koan
     chico = Chihuahua.new("Chico")
     assert_equal :happy, chico.wag
 
-    assert_raise(NoMethodError)
+    assert_raise(NoMethodError) do
       fido = Dog.new("Fido")
       fido.wag
-    
+    end
   end
 
   def test_subclasses_can_modify_existing_behavior
